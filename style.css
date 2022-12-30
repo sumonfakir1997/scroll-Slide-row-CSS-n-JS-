@@ -1,0 +1,38 @@
+*{
+    margin: 0%;
+    padding: 0%;
+}
+.container{
+    background-color: #B2B1B9;
+    display: flex;
+    flex-direction: column;
+    
+}
+ h2{
+    margin: 2rem auto;
+ }
+
+.box{
+    text-align: center;
+    font-weight: bold;
+    padding: 1.5rem;
+    color: white;
+    margin: 0 auto;
+    display: flex;
+    border: 1px solid gray;
+    background-color: cornflowerblue;
+    margin-bottom: 2rem;
+    height: 300px;
+    width: 250px;
+    justify-content: center;
+    text-align: center;
+    transform: translateX(200%);
+    transition: transform 0.3s ease-in-out;
+} 
+.box:nth-of-type( even){
+    transform: translateX(-200%);
+}
+/* .box:nth-of-type(odd) */
+.box.show {
+transform: translateX(0);
+}
